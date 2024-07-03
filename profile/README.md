@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the deployment and management of a Health Check RESTful API integrated within a comprehensive cloud infrastructure. Utilizing AWS and GCP services, the project highlights automated CI/CD pipelines, infrastructure provisioning with Terraform, and robust health monitoring to maintain optimal application performance.
+This project demonstrates the deployment and management of a Health Check RESTful API integrated within a comprehensive cloud infrastructure. Utilizing GCP services, the project highlights automated CI/CD pipelines, infrastructure provisioning with Terraform, and robust health monitoring to maintain optimal application performance.
 
 ## Table of Contents
 
@@ -22,26 +22,26 @@ This project demonstrates the deployment and management of a Health Check RESTfu
 - **Health Check API**: Endpoint to monitor application and database health.
 - **Automated CI/CD Pipelines**: Continuous integration and deployment using GitHub Actions.
 - **Infrastructure as Code**: Terraform scripts to provision and manage cloud resources.
-- **Scalability and Security**: Autoscaling, load balancing, and encryption using GCP/AWS services.
+- **Scalability and Security**: Autoscaling, load balancing, and encryption using GCP services.
 - **Domain and DNS Management**: Secure HTTPS access via Cloud DNS and SSL certificates.
 - **Robust Monitoring**: Structured logging and application health monitoring.
 
 ## Architecture
 
-The project architecture consists of several key components deployed on AWS/GCP:
+The project architecture consists of several key components deployed on GCP:
 
 1. **Health Check API**: A Node.js-based REST API with a `/healthz` endpoint.
 2. **Cloud Infrastructure**: Managed through Terraform, includes VPCs, subnets, and CloudSQL instances.
 3. **CI/CD Pipelines**: Automated using GitHub Actions to build, test, and deploy code.
 4. **Load Balancer and Autoscaler**: Ensures high availability and performance based on health checks.
-5. **Custom VM Images**: Built with Packer and deployed to GCP/AWS instances.
+5. **Custom VM Images**: Built with Packer and deployed to GCP instances.
 
 
 ## Getting Started
 
 ### Prerequisites
 
-- AWS or GCP account with appropriate permissions.
+- GCP account with appropriate permissions.
 - [Terraform](https://www.terraform.io/downloads.html) installed.
 - [GitHub CLI](https://cli.github.com/) installed.
 - [Docker](https://www.docker.com/products/docker-desktop) installed.
@@ -130,7 +130,7 @@ The project utilizes Terraform to define and manage the cloud infrastructure.
     packer build packer-template.json
     ```
 
-2. **Deploy Custom Image**: Use the GCP/AWS console or CLI to deploy the custom image to your VM instances.
+2. **Deploy Custom Image**: Use the GCP console or CLI to deploy the custom image to your VM instances.
 
 ## Security and Compliance
 
