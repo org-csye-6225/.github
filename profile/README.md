@@ -100,15 +100,6 @@ The project utilizes Terraform to define and manage the cloud infrastructure.
    subnet1_cidr   = "192.168.1.0/24"
    subnet2_cidr   = "192.168.2.0/24"
 
-1. **Edit Terraform Variables**:
-   Modify `terraform.tfvars` to configure your infrastructure parameters:
-   ```hcl
-   region         = "us-central1"
-   vpc_cidr       = "192.168.0.0/16"
-   subnet1_cidr   = "192.168.1.0/24"
-   subnet2_cidr   = "192.168.2.0/24"
-   ```
-
 2. **Apply Terraform Configuration**:
   ```bash
    terraform apply -var-file="terraform.tfvars"
